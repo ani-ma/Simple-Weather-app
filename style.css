@@ -4,7 +4,11 @@
     font-family: 'poppins',sans-serif;
     box-sizing: border-box;
 }
-
+:root{
+    --gradient:linear-gradient(
+        45deg,#845ec2,#d65db1,#ff6f91,#ff9671,#ffc75f,#f9f871
+    );
+}
 body{
     background-color: #222;
 }
@@ -12,12 +16,19 @@ body{
 .card{
     width: 90%;
     max-width: 476px;
-    background: linear-gradient(135deg,#00feba,#5b548a);
+    background-image: var(--gradient);
+    background-size: 300%;
+    animation:bg-animation 20s alternate;
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+}
+
+@keyframes bg-animation{
+    0% {background-position: left;}
+    100%{background-position: right;}
 }
 
 .search{

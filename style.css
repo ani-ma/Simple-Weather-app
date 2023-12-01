@@ -18,7 +18,7 @@ body{
     max-width: 476px;
     background-image: var(--gradient);
     background-size: 300%;
-    animation:bg-animation 20s alternate;
+    animation:bg-animation 15s infinite alternate;
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
